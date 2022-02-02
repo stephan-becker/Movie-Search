@@ -1,38 +1,46 @@
+html {
+  background-color: #e2e8f0;
+}
+
 .App {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+  margin: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search input {
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+.movie-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #fff;
+  margin: auto;
+  width: 400px;
+  box-shadow: 0px 30px 30px rgb(0 0 0 / 2%), 0px 0px 8px rgb(0 0 0 / 3%),
+    0px 1px 0px rgb(0 0 0 / 5%);
+  border-radius: 0.325em;
 }
 
-.App-link {
-  color: #61dafb;
+.movie-card h2 {
+  color: #333;
+}
+.movie-card span {
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-card img {
+  width: 325px;
+  margin: auto;
+  padding: 2em;
 }
