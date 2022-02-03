@@ -7,7 +7,7 @@ interface SearchProps {
 
 export const Search: FunctionComponent<SearchProps> = ({
   searchText,
-  onSubmit
+  onSubmit,
 }: SearchProps) => {
   const [search, setInput] = useState(searchText);
 
@@ -18,9 +18,10 @@ export const Search: FunctionComponent<SearchProps> = ({
 
   return (
     <form onSubmit={handleSubmit} className="search">
-      <label>
+      <label htmlFor="search-input">
         Search by Title
         <input
+          id="search-input"
           type="text"
           value={search}
           onChange={(e) => setInput(e.target.value)}
