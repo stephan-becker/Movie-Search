@@ -2,18 +2,18 @@ import { FunctionComponent, useState } from "react";
 
 interface SearchProps {
   searchText: string;
-  onSubmit: (newSearchText: string) => void;
+  onSearchSubmit: (newSearchText: string) => void;
 }
 
 export const Search: FunctionComponent<SearchProps> = ({
   searchText,
-  onSubmit,
+  onSearchSubmit,
 }: SearchProps) => {
   const [search, setInput] = useState(searchText);
 
   const handleSubmit = (evt: any) => {
     evt.preventDefault();
-    onSubmit(searchText);
+    onSearchSubmit(searchText);
   };
 
   return (

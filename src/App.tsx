@@ -11,7 +11,7 @@ function App() {
       <h1>Movie Search</h1>
       <Search
         searchText={"Rambo"}
-        onSubmit={(searchText) => alert(searchText)}
+        onSearchSubmit={(searchText) => alert(searchText)}
       />
 
       <MovieCard
