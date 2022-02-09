@@ -9,7 +9,7 @@ export const Search: FunctionComponent<SearchProps> = ({
   searchText,
   onSearchSubmit,
 }: SearchProps) => {
-  const [search, setInput] = useState(searchText);
+  const [searchInput, setSearchInput] = useState(searchText);
 
   const handleSubmit = (evt: any) => {
     evt.preventDefault();
@@ -23,8 +23,8 @@ export const Search: FunctionComponent<SearchProps> = ({
         <input
           id="search-input"
           type="text"
-          value={search}
-          onChange={(e) => setInput(e.target.value)}
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
         />
       </label>
       <input type="submit" value="Submit" />
